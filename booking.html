@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📅 book your trip</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 1.2em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #ffd1dc;
+    }
+    main {
+      padding: 2em;
+      background-color: rgba(0, 0, 0, 0.75);
+      margin: 2em auto;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #ffccff;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.7em;
+      margin-top: 0.3em;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 1.5em;
+      background-color: #ffd1dc;
+      color: #000;
+      font-weight: bold;
+      padding: 0.8em 1.2em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ffe6f0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 1.5em;
+      color: #ccc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📅 book your space trip</h1>
+  </header>
+  <main>
+    <form>
+      <label for="name">👤 Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="trip">🛰️ Select Your Trip:</label>
+      <select id="trip" name="trip">
+        <option>Moon Walk</option>
+        <option>Sun Shot</option>
+        <option>Saturn Ice Ring Run</option>
+        <option>Asteroid Hunt</option>
+      </select>
+
+      <label for="date">📆 Choose Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">🚀 Confirm Booking</button>
+    </form>
+    <a href="index.html" class="back-link">⬅️ Back to Home</a>
+  </main>
+</body>
+</html>
